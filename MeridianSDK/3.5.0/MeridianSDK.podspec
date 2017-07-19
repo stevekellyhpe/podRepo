@@ -85,6 +85,6 @@ Pod::Spec.new do |s|
   s.library      = 'c++.1', 'xml2.2'
   s.vendored_frameworks = "meridian-ios-sdk-#{s.version}/Meridian.framework"
   s.resource            = "meridian-ios-sdk-#{s.version}/Meridian.bundle"
-  s.exclude_files = "meridian-ios-sdk-#{s.version}/MeridianSamples", "meridian-ios-sdk-#{s.version}/MeridianSwiftSamples"
+  s.exclude_files = "meridian-ios-sdk-#{s.version}/MeridianSamples/*", "meridian-ios-sdk-#{s.version}/MeridianSwiftSamples/*"
   s.requires_arc = true
 end
