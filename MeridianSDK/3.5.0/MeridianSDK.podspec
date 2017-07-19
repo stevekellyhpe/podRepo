@@ -81,11 +81,9 @@ Pod::Spec.new do |s|
   s.author       = { "Meridian Apps" => "developers@meridianapps.com" }
   s.platform     = :ios, '8.0'
   s.source       = { :http => "http://files.meridianapps.com/meridian-ios-sdk/meridian-ios-sdk-#{s.version}.zip" }
-  s.preserve_paths =  "meridian-ios-sdk-#{s.version}"
   s.frameworks   = 'Foundation', 'CoreLocation', 'CoreMotion', 'SystemConfiguration', 'CoreBluetooth', 'UIKit', 'MobileCoreServices'
   s.library      = 'c++.1', 'xml2.2'
   s.vendored_frameworks = "meridian-ios-sdk-#{s.version}/Meridian.framework"
   s.resource            = "meridian-ios-sdk-#{s.version}/Meridian.bundle"
-  s.xcconfig     =  { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/Meridian/"' }
   s.requires_arc = true
 end
