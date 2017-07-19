@@ -83,7 +83,7 @@ Pod::Spec.new do |s|
   s.source       = { :http => "http://localhost:8000/meridian-ios-sdk-#{s.version}.zip" }
   s.frameworks   = 'Foundation', 'CoreLocation', 'CoreMotion', 'SystemConfiguration', 'CoreBluetooth', 'UIKit', 'MobileCoreServices'
   s.library      = 'c++.1', 'xml2.2'
-  s.vendored_frameworks = "Meridian.framework"
-  s.resource            = "Meridian.bundle"
+  s.vendored_frameworks = 'Meridian.framework'
+  s.resource            = 'Meridian.bundle'
   s.requires_arc = true
 end
